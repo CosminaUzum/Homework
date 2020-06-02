@@ -1,13 +1,29 @@
 body {
 	background-color: #E5ECF0;
+	font-family:sans-serif; 
+	margin: 0;
+}
+h2 {
+	padding: 0.5em;
+	margin: 0;
 }
 
 .container {
-	background-color: white;
-	display: inline-flex;
-	border-radius: 10px;
+	background-color: #fcfcfc;
+    width: 400px;
+    margin: 2rem auto;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
 }
 
 .secondContainer {
+	background-color: white;
+	border-radius: 5px;
 
+}
+
+.imageContainer {
+	padding: 1em;
 }
