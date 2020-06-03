@@ -1,21 +1,48 @@
+:root {
+  --spacing: 15px;
+}
+
 body {
 	background-color: #E5ECF0;
-	font-family:sans-serif; 
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 }
 h2 {
-	padding: 0.5em;
+	padding: var(--spacing);
 	margin: 0;
 }
 
+input {
+    border-radius: var(--spacing);
+    border: none;
+    padding: var(--spacing);
+    color: gray;
+    background: white ;
+    width: 300px;
+    font-size: 14px;
+  }
+
+  img {
+  float: left;
+  shape-outside: circle(50%);
+  	
+  }
+   .search {
+    padding: 20px;
+  }
+  
+  .message {
+  	color: gray;
+  }
 .container {
 	background-color: #fcfcfc;
     width: 400px;
     margin: 2rem auto;
-	border-radius: 5px;
+	border-radius: var(--spacing);
 	overflow: hidden;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 	box-sizing: border-box;
+	text-decoration-color: black;  
 }
 
 .secondContainer {
@@ -25,5 +52,10 @@ h2 {
 }
 
 .imageContainer {
-	padding: 1em;
+	padding: var(--spacing);
 }
+
+  .fa-search {
+    position: relative;
+    left: -25px;
+  }
