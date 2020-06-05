@@ -4,7 +4,7 @@
 
 body {
 	background-color: #E5ECF0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
 }
 h2 {
@@ -27,6 +27,9 @@ input {
   shape-outside: circle(50%);
   	
   }
+  .arrow {
+    height: 1.25em;
+  }
    .search {
     padding: 20px;
   }
@@ -42,7 +45,8 @@ input {
 	overflow: hidden;
 	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 	box-sizing: border-box;
-	text-decoration-color: black;  
+	text-decoration-color: black; 
+  flex-direction: row; 
 }
 
 .secondContainer {
