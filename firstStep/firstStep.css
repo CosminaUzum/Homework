@@ -7,7 +7,7 @@ body {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
 }
-h2 {
+h1 {
 	padding: var(--spacing);
 	margin: 0;
 }
@@ -30,13 +30,13 @@ input {
   .arrow {
     height: 1.25em;
   }
-   .search {
+   /*.search {
     padding: 20px;
   }
   
   .message {
   	color: gray;
-  }
+  }*/
 .container {
 	background-color: #fcfcfc;
     width: 400px;
@@ -54,12 +54,3 @@ input {
 	border-radius: 5px;
 
 }
-
-.imageContainer {
-	padding: var(--spacing);
-}
-
-  .fa-search {
-    position: relative;
-    left: -25px;
-  }
