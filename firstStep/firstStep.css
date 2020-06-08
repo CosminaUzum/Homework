@@ -1,7 +1,7 @@
 :root {
   --spacing: 15px;
   --color-text: #192224;
-  --color-grey: #d1d1d1;
+  --color-grey: #808080;
 }
 
 html {
@@ -29,3 +29,12 @@ h1 {
   border-radius: var(--spacing);
   box-sizing: border-box;
 }
+
+.padded {
+  padding: var(--spacing);
+}
+
+.muted{
+   color:var(--color-grey);
+ }
+
