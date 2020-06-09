@@ -29,6 +29,11 @@ h1 {
   border-radius: var(--spacing);
   box-sizing: border-box;
 }
+.container-header {
+  background-image: linear-gradient (#fbfcfc, #f4fefe);
+  box-shadow: 0 5px 5px 0 rgba(10, 101, 187, 0.1);
+  border-radius: var(--spacing);
+}
 
 .padded {
   padding: var(--spacing);
@@ -38,3 +43,22 @@ h1 {
    color:var(--color-grey);
  }
 
+.arrow {
+  height: 1em;
+}
+.circle {
+  border-radius: 50%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1em 0;
+}
+ .menu {
+  text-indent: -9999em;
+  border: 0;
+  background: none;
+  position:relative;
+  height: 0;
+ }
