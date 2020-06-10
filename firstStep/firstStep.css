@@ -83,8 +83,8 @@ h1 {
  }
 
  .center{
-  display: grid;
+  display:grid;
   justify-content: space-between;
   align-items: center;
-  margin:1.5em 3em;
+  margin:1em 0;
  }
