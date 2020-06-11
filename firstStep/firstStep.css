@@ -105,3 +105,19 @@ input {
     border-radius: 7px 7px;
     background-image:linear-gradient (#ffffff, #fdfefe);
 }
+.loupe {
+    background-color: pink;
+    border-radius: 80%;
+    box-shadow: 1px;
+    cursor: pointer;
+    float: left;
+    height: 25px;
+    width: 25px;
+    margin: 10px 0 ;
+    text-align: center;
+
+}
+.loupe img{
+    margin:4px;
+    width:16px; 
+}
