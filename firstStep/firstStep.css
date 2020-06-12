@@ -96,16 +96,63 @@ dl {
     display: grid;
 }
 
-input {
-    overflow: hidden;
-    width: 350px;
-    height: 40px;
-    border:none;
-    margin: 2em 0;
-    border-radius: 7px 7px;
-    background-image:linear-gradient (#ffffff, #fdfefe);
+.search {
+    position: relative;
 }
-.loupe {
+
+.search input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px 0 60px;
+    border:0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(205, 217, 238,0.7);
+}
+
+ .search input::placeholder {
+    color:var(--color-grey);
+}
+.search button {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    text-indent: -9999em;
+    width: 30px;
+    height: 30px;
+    display:block;
+    border: 1px rgba(255,255,255, 0.2) solid;
+    background: linear-gradient(#ff93be, #ff77a7);
+    box-shadow: 0 7px 10px rgba(255, 145, 189, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search button::after {
+    content: "";
+    display: block;
+    background: white;
+    width: 10px;
+    height: 10px;
+    border:1px white solid;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 7px);
+    left: calc(50% - 7px);
+}
+.search button:: before {
+    content: "";
+    display: block;
+    background: white;
+    width: 4px;
+    height: 1px;
+    position: absolute;
+    bottom: 9px;
+    right: 8px;
+    transform: rotate(45deg);
+    
+}
+
+.lupa {
     background-color: pink;
     border-radius: 80%;
     box-shadow: 1px;
@@ -117,7 +164,7 @@ input {
     text-align: center;
 
 }
-.loupe img{
+.lupa img{
     margin:4px;
     width:16px; 
 }
