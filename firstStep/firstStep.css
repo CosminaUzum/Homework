@@ -34,9 +34,46 @@ h1 {
     box-shadow: 0 5px 5px 0 rgba(10, 101, 187, 0.1);
     border-radius: var(--spacing);
 }
-
 .padded {
     padding: var(--spacing);
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap: wrap;
+    
+}
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    width: 25%;
+    padding: 0 4px;
+
+}
+.column img {
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+   .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 150%;
+   } 
+}
+
+@media screen and (max-width: 600px){
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
 }
 
 .muted {
@@ -110,9 +147,11 @@ dl {
     box-shadow: 0 5px 20px rgba(205, 217, 238,0.7);
 }
 
- .search input::placeholder {
-    color:var(--color-grey);
+ .search input::placeholder{
+    color: var(--color-grey);
 }
+
+
 .search button {
     position: absolute;
     top: 10px;
@@ -130,7 +169,6 @@ dl {
 .search button::after {
     content: "";
     display: block;
-    background: white;
     width: 10px;
     height: 10px;
     border:1px white solid;
@@ -139,7 +177,7 @@ dl {
     top: calc(50% - 7px);
     left: calc(50% - 7px);
 }
-.search button:: before {
+.search button::before {
     content: "";
     display: block;
     background: white;
@@ -150,21 +188,4 @@ dl {
     right: 8px;
     transform: rotate(45deg);
     
-}
-
-.lupa {
-    background-color: pink;
-    border-radius: 80%;
-    box-shadow: 1px;
-    cursor: pointer;
-    float: left;
-    height: 25px;
-    width: 25px;
-    margin: 10px 0 ;
-    text-align: center;
-
-}
-.lupa img{
-    margin:4px;
-    width:16px; 
 }
