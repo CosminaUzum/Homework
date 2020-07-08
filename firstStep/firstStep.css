@@ -38,43 +38,6 @@ h1 {
     padding: var(--spacing);
 }
 
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap:wrap;
-    flex-wrap: wrap;
-    
-}
-.column {
-    -ms-flex: 25%;
-    flex: 25%;
-    width: 25%;
-    padding: 0 4px;
-
-}
-.column img {
-    margin-top: 8px;
-    width: 100%;
-    border-radius: 5px;
-    vertical-align: middle;
-}
-
-@media screen and (max-width: 800px) {
-   .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 150%;
-   } 
-}
-
-@media screen and (max-width: 600px){
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-
-}
 
 .muted {
     color: var(--color-grey);
@@ -206,4 +169,38 @@ dl {
     width: 50%;
     height: 50%;
     border-radius: 50%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "a b b"
+    "a c c";
+}
+.item1 {
+  grid-area: a;
+  background-image: url(won.jpg);
+  border: 0;
+  margin: 1em;
+  border-radius: var(--spacing); 
+  padding: var(--spacing);
+
+}
+.item2 {
+  grid-area: b;
+  background-image: url(won.jpg);
+  border: 0;
+  margin: 1em;
+  border-radius: var(--spacing);
+  padding: var(--spacing);
+}
+.item3{
+  grid-area: c;
+  background-image: url(won.jpg);
+  border: 0;
+  margin: 1em;
+  border-radius: var(--spacing);
+  padding: var(--spacing);
 }
