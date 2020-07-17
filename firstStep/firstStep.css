@@ -25,7 +25,7 @@ h1 {
     width: 400px;
     margin: 2rem auto;
     overflow: hidden;
-    border-radius: var(--spacing);
+    border-radius: 15px;
     box-sizing: border-box;
 }
 
@@ -49,6 +49,10 @@ h1 {
 
 .circle {
     border-radius: 50%;
+}
+
+.center {
+    text-align: center;
 }
 
 .header {
@@ -83,17 +87,6 @@ h1 {
 
 .meniu::after {
     bottom: -6px;
-}
-
-.center {
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em 0;
-}
-
-dl {
-    display: grid;
 }
 
 .search {
@@ -160,7 +153,6 @@ dl {
     text-indent: middle;
     box-sizing: content-box;
 }
-}
 
 .card img{
     box-sizing: border-box;
@@ -171,36 +163,53 @@ dl {
     border-radius: 50%;
 }
 
+.stats {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    margin-top: 2em;
+}
+.stats dt {
+    color: var(--color-grey);
+}
+.stats dd{
+    margin: 0;
+    font-weight: 600;
+}
+
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  padding: var(--spacing);
+  margin: 1em;
+  width: 85%;
+  height: 220px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    "a b b"
-    "a c c";
+    "a b"
+    "a c";
+  grid-gap: 10px 20px;
 }
 .item1 {
   grid-area: a;
-  background-image: url(won.jpg);
-  border: 0;
-  margin: 1em;
-  border-radius: var(--spacing); 
-  padding: var(--spacing);
+  background-image: url(https://picsum.photos/id/1004/5616/3744);
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--spacing);
 
 }
 .item2 {
   grid-area: b;
-  background-image: url(won.jpg);
-  border: 0;
-  margin: 1em;
+  background-image: url(https://picsum.photos/id/1006/3000/2000);
+  background-position: center;
+  background-size: cover;
   border-radius: var(--spacing);
-  padding: var(--spacing);
 }
-.item3{
+.item3 {
   grid-area: c;
-  background-image: url(won.jpg);
-  border: 0;
-  margin: 1em;
+  background-image: url(https://picsum.photos/id/1011/5472/3648);
+  background-position: center;
+  background-size: cover;
   border-radius: var(--spacing);
-  padding: var(--spacing);
-}
