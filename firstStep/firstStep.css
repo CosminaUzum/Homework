@@ -213,3 +213,28 @@ h1 {
   background-position: center;
   background-size: cover;
   border-radius: var(--spacing);
+}
+
+.chat {
+    display: grid;
+}
+
+.list {
+    padding: 10px 15px;
+    display: flex;
+    vertical-align: baseline;
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+.text {
+    margin-left: 12px;
+    width: 85%;
+    text-align: left;
+}
+.text h4 {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.text p {
+    margin: 0;
+}
