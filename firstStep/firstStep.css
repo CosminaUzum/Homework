@@ -214,11 +214,9 @@ h1 {
   background-size: cover;
   border-radius: var(--spacing);
 }
-
 .chat {
     display: grid;
 }
-
 .list {
     padding: 10px 15px;
     display: flex;
@@ -237,4 +235,49 @@ h1 {
 }
 .text p {
     margin: 0;
+}
+.new {
+    position: relative;
+    box-sizing: border-box;
+    width: 95%;
+    height: 90px;
+    box-shadow: 0;
+}
+
+.new button {
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    text-indent: -9999em;
+    width: 40px;
+    height: 40px;
+    display:block;
+    border: 1px rgba(255,255,255, 0.2) solid;
+    background: linear-gradient(#ff93be, #ff77a7);
+    box-shadow: 0 7px 10px rgba(255, 145, 189, 0.6);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.new button::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 12px;
+    border: 1px white solid;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; 
+    transform: rotate(19deg);
+    position: absolute;
+    top: calc(50% - 7px);
+    left: calc(50% - 7px);
+}
+.new button::before {
+    content: "";
+    display: block;
+    background: white;
+    width: 8px;
+    height: 1px;
+    position: absolute;
+    bottom: 9px;
+    right: 15px;
 }
