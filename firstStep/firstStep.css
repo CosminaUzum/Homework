@@ -220,20 +220,19 @@ h1 {
 .list {
     padding: 10px 15px;
     display: flex;
-    vertical-align: baseline;
-    margin-top: 10%;
-    margin-bottom: 0;
+    align-items: center;
+}
+.list * {
+	margin-top: auto;
+    margin-bottom: auto;
 }
 .text {
     margin-left: 12px;
     width: 85%;
     text-align: left;
 }
-.text h4 {
-    margin-top: 15px;
-    margin-bottom: 0;
-}
-.text p {
+
+.text span {
     margin: 0;
 }
 .new {
@@ -249,35 +248,20 @@ h1 {
     top: 10px;
     right: 2px;
     text-indent: -9999em;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display:block;
     border: 1px rgba(255,255,255, 0.2) solid;
-    background: linear-gradient(#ff93be, #ff77a7);
     box-shadow: 0 7px 10px rgba(255, 145, 189, 0.6);
     border-radius: 50%;
     cursor: pointer;
+    background: url("crayon.svg");
+    background-color: #ff93be;
+    background-position: center; 
+    background-size: 50%;
+    background-repeat: no-repeat;
 }
-.new button::after {
-    content: "";
-    display: block;
-    width: 5px;
-    height: 12px;
-    border: 1px white solid;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px; 
-    transform: rotate(19deg);
-    position: absolute;
-    top: calc(50% - 7px);
-    left: calc(50% - 7px);
-}
-.new button::before {
-    content: "";
-    display: block;
-    background: white;
-    width: 8px;
-    height: 1px;
-    position: absolute;
-    bottom: 9px;
-    right: 15px;
+
+.crayon {
+
 }
