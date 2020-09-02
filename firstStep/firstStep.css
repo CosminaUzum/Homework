@@ -1,5 +1,5 @@
 :root {
-    --spacing: 15px;
+    --spacing: 25px;
     --color-text: #192224;
     --color-grey: #808080;
 }
@@ -25,7 +25,7 @@ h1 {
     width: 400px;
     margin: 2rem auto;
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: var(--spacing);
     box-sizing: border-box;
 }
 
@@ -33,6 +33,7 @@ h1 {
     background-image: linear-gradient (#fafbfd, #fdfefe);
     box-shadow: 0 5px 5px 0 rgba(10, 101, 187, 0.1);
     border-radius: var(--spacing);
+    padding: var(--spacing);
 }
 .padded {
     padding: var(--spacing);
@@ -59,7 +60,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1em 0;
 }
 
 .menu {
@@ -148,15 +148,15 @@ h1 {
 .wrapper {
   display: grid;
   padding: var(--spacing);
-  margin: 1em;
-  width: 85%;
-  height: 220px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  width: 88%;
+  height: 250px;
+  grid-template-columns: 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
   grid-template-areas: 
     "a b"
     "a c";
-  grid-gap: 10px 20px;
+  grid-gap: 10px 10px;
+  align-self: center;
 }
 .item1 {
   grid-area: a;
@@ -164,6 +164,7 @@ h1 {
   background-position: center;
   background-size: cover;
   border-radius: var(--spacing);
+  padding: var(--spacing);
 
 }
 .item2 {
@@ -172,6 +173,7 @@ h1 {
   background-position: center;
   background-size: cover;
   border-radius: var(--spacing);
+  padding: var(--spacing);
 }
 .item3 {
   grid-area: c;
@@ -179,26 +181,38 @@ h1 {
   background-position: center;
   background-size: cover;
   border-radius: var(--spacing);
+  padding: var(--spacing);
 }
 
 .wrapper2 {
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    display: grid;
+    grid-template-rows: 1fr;
     grid-template-areas: "a b c d";
+    grid-gap: 10px;
     box-sizing: border-box;
     box-shadow: 0;
     position: relative;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+.slide{
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
 }
 
-  .itemA button {
-  	text-indent: -9999em;
-  	top: 2px;
-  	left: 3px;
-  	width: 75px;
+
+  .one {
+    text-indent: -9999em;
+    top: 1px;
+    left: 2px;
+    width: 75px;
     height: 75px;
     display:block;
-    border: 1px rgba(255,255,255, 0.2) solid;
+    border: 2px rgba(255,255,255, 0.2) solid;
     box-shadow: none;
     border-radius: 50%;
     cursor: pointer;
@@ -209,30 +223,36 @@ h1 {
     background-repeat: no-repeat;
     grid-area: a;
   }
-.itemB {
-	grid-area: b;
-	background-image: url(https://picsum.photos/id/1005/60);
+.two {
+    grid-area: b;
+    background-image: url(https://picsum.photos/id/1005/60);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 50%;
+    border: 2px solid pink;
     width: 75px;
     height: 75px;
    }
-.itemC {
-	grid-area: c;
-	background-image: url(https://picsum.photos/id/1005/60);
+.three {
+    grid-area: c;
+    background-image: url(https://picsum.photos/id/1005/60);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 50%;
+    border: 2px solid pink;
     width: 75px;
-    height: 75px;
-}
-.itemD {
-	grid-area: d;
-	background-image: url(https://picsum.photos/id/1005/60);
+    height: 75px;}
+
+.four {
+    grid-area: d;
+    background-image: url(https://picsum.photos/id/1005/60);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 50%;
+    border:2px solid pink;
     width: 75px;
     height: 75px;
 }
@@ -243,7 +263,7 @@ h1 {
     box-shadow: 0 0 5px 0 rgba(10, 101, 187, 0.1);
     border-radius: var(--spacing);
     text-indent: middle;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 .square{
@@ -251,10 +271,11 @@ h1 {
     border: solid none 1px;
     width: 100%;
     height: 100%;
-    border-radius: var(--spacing);
+    border-top-right-radius: var(--spacing);
+    border-top-left-radius: var(--spacing);
 }
 #dot {
-	padding-left: 12em;
+	padding-left: 10em;
 }
 
 
@@ -265,6 +286,7 @@ h1 {
     grid-template-rows: auto auto;
     justify-items: center;
     margin-top: 2em;
+    padding: var(--spacing);
 }
 .stats dt {
     color: var(--color-grey);
