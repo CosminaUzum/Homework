@@ -14,6 +14,9 @@ body {
     background-image: linear-gradient(#dbe5f1, #dbe5ff);
     min-height: 100vh;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
 }
 
 h1 {
@@ -23,6 +26,7 @@ h1 {
 .container {
     background-image: linear-gradient(#f0f5fb, #e3e9f3);
     width: 400px;
+    height: auto;
     margin: 2rem auto;
     overflow: hidden;
     border-radius: var(--spacing);
@@ -34,6 +38,7 @@ h1 {
     box-shadow: 0 5px 5px 0 rgba(10, 101, 187, 0.1);
     border-radius: var(--spacing);
     padding: var(--spacing);
+    height: 150%;
 }
 .padded {
     padding: var(--spacing);
@@ -231,7 +236,7 @@ h1 {
     background-repeat: no-repeat;
   }
 .two {
-    background-image: url(https://picsum.photos/id/1005/60);
+    background-image: url(https://picsum.photos/id/1027/2848/4272);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -246,7 +251,7 @@ h1 {
 }
 
 .four {
-    background-image: url(https://picsum.photos/id/1005/60);
+    background-image: url(https://i.picsum.photos/id/447/367/267.jpg?hmac=l4sxf9I_zZkWFw_CIjYI6L4oAOZZOj7FGnfnKyEkkDo);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,42 +259,42 @@ h1 {
 
 }
 .five {
-    background-image: url(https://picsum.photos/id/1005/60);
+    background-image: url(https://picsum.photos/id/548/5760/3840);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid pink;
    }
 .six {
-    background-image: url(https://picsum.photos/id/1005/60);
+    background-image: url(https://picsum.photos/id/550/1536/2304);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid pink;
    }
 .seven {
-    background-image: url(https://picsum.photos/id/1005/60);
+    background-image: url(https://i.picsum.photos/id/633/1818/1228.jpg?hmac=dyjPGybYgWgnTXC3lPjV-rap_PQUlnC0O6vCkhP_-HE);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid pink;
    }
 .eight {
-    background-image: url(https://picsum.photos/id/1005/60);
+    background-image: url(https://picsum.photos/id/646/2509/1673);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid pink;
    }
  .nine {
-    background-image: url(https://picsum.photos/id/1005/60);
+    background-image: url(https://picsum.photos/id/65/4912/3264);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border: 2px solid pink;
    }
 .ten {
-    background-image: url(https://picsum.photos/id/1005/60);
+    background-image: url(https://picsum.photos/id/669/4869/3456);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -384,3 +389,4 @@ h1 {
     background-size: 50%;
     background-repeat: no-repeat;
 }
+
